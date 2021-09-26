@@ -11,6 +11,26 @@ h2 {
 
 .container{
     margin: 0 auto;
+    padding: 20px;
     max-width: 240px;
-    
+    background-color: blue;
+    border: 3px solid #000;
+
+}
+
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.cell{
+    border-radius:3px;
+    width: 75px;
+    height: 65px;
+    text-align: center;
+    font-size: 30pt;
+    margin: 4px 2px;
+    font-weight: 300;
+    background-color: aquamarine;
 }

@@ -27,13 +27,52 @@ function play(id){
     const cell = document.getElementById(id);
     turn = checkTurn ? PLAYER_X : PLAYER_O;
     cell.textContent = turn;
-    checkTurn=!checkTurn;
+    cell.classList.add(turn);
+    
     checkWinner(turn);
 }
 
 //Game rules: who is the winner? // if there was a tie//if there is another round.
 
 function checkWinner(event){
+    const winner = COMBINATION.some((comb) => {
+        return comb.every((index) =>{
+            return cell[index].classList.contains(turn);
 
+        })
 
+    });
+
+if (winner){
+    endGame(turn);
+}else if(checkTie()){
+    endGame();
+}else {
+     checkTurn=!checkTurn;
 }
+}
+
+function checkTie(){
+    let x = 0;
+    let o = 0;
+
+    for (index in cell) {
+        if(!sNaN(index)){
+        if(cell[index].classList.contains(PLAYER_X)) {
+            x++;
+        }
+
+        if(cell[index].classList.contains(PLAYER_O)) {
+            o++;
+        }
+    }
+}
+    return x+o == 9? true : false;
+}
+function endGame(winner= null) {
+    if (winner) {
+        console.log("winner: " +winner);
+    }else {
+        console.log("Tie");
+    }
+ }

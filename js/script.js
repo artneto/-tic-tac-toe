@@ -28,15 +28,14 @@ function play(id){
     turn = checkTurn ? PLAYER_X : PLAYER_O;
     cell.textContent = turn;
     cell.classList.add(turn);
-    
     checkWinner(turn);
 }
 
 //Game rules: who is the winner? // if there was a tie//if there is another round.
 
-function checkWinner(event){
+function checkWinner(turn){
     const winner = COMBINATION.some((comb) => {
-        return comb.every((index) =>{
+        return comb.every((index) => {
             return cell[index].classList.contains(turn);
 
         })
@@ -45,33 +44,35 @@ function checkWinner(event){
 
 if (winner){
     endGame(turn);
-}else if(checkTie()){
+}else if(checkTie()) {
     endGame();
 }else {
-     checkTurn=!checkTurn;
-}
+     checkTurn = !checkTurn;
+    }
 }
 
 function checkTie(){
     let x = 0;
     let o = 0;
-
-    for (index in cell) {
-        if(!sNaN(index)){
-        if(cell[index].classList.contains(PLAYER_X)) {
+  for (index in cells) {
+      if(!isNaN(index)) {
+        if(cells[index].classList.contains(PLAYER_X)) {
             x++;
         }
-
-        if(cell[index].classList.contains(PLAYER_O)) {
+  
+        if(cells[index].classList.contains(PLAYER_O)) {
             o++;
         }
+
     }
+      
 }
-    return x+o == 9? true : false;
+
+  return x + o === 9 ? true : false;
 }
-function endGame(winner= null) {
+function endGame(winner = null) {
     if (winner) {
-        console.log("winner: " +winner);
+        console.log("Winner: " + winner);
     }else {
         console.log("Tie");
     }

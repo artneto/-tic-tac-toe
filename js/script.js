@@ -1,3 +1,5 @@
+//Define the players X and O.
+
 const cell = document.querySelectorAll(".cell");
 let checkTurn=true;
 const PLAYER_X="X";
@@ -14,5 +16,10 @@ function play(id){
     const cell = document.getElementById(id);
     turn = checkTurn ? PLAYER_X : PLAYER_O;
     cell.textContent = turn;
-    checkTurn=checkTurn;
+    checkTurn=!checkTurn;
+    checkWinner(turn);
+}
+
+function checkWinner() {
+
 }

@@ -78,9 +78,22 @@ function checkTie(){
   return x + o === 9 ? true : false;
 }
 function endGame(winner = null) {
+    const popBox =document.getElementById("pop-box");
+    const h2 = document.createElement("h2");
+    const h3 = document.createElement("h3");
+    let message= null;
+
+
+    popBox.style.display="block";
+    popBox.appendChild(h2);
+    popBox.appendChild(h3);
+
+
     if (winner) {
-        console.log("Winner: " + winner);
+        h2.innerHTML =  `O player <span>${winner}</span> win `;
     }else {
-        console.log("Tie");
+        h2.innerHTML =  "Tie";
     }
+
+
  }

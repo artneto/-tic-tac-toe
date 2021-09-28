@@ -23,13 +23,20 @@ document.addEventListener("click", (event) =>{
 
 });
 //Function to check the turn from each player. Player X "true" is the first to play, Player O "false" is after Player X.
-function play(id){
+function play (id) {
     const cell = document.getElementById(id);
-    turn = checkTurn ? PLAYER_X : PLAYER_O;
-    cell.textContent = turn;
-    cell.classList.add(turn);
-    checkWinner(turn);
-}
+    turn = checkTurn? PLAYER_X : PLAYER_O;
+    if (!cell.isTaken) {
+        cell.textContent = turn;
+        cell.isTaken = true;
+        cell.classList.add(turn);
+        checkWinner(turn);
+        } else {
+            console.log("Already taken");
+        }
+  
+ 
+   }
 
 //Game rules: who is the winner? // if there was a tie//if there is another round.
 
@@ -54,13 +61,13 @@ if (winner){
 function checkTie(){
     let x = 0;
     let o = 0;
-  for (index in cells) {
+  for (index in cell) {
       if(!isNaN(index)) {
-        if(cells[index].classList.contains(PLAYER_X)) {
+        if(cell[index].classList.contains(PLAYER_X)) {
             x++;
         }
   
-        if(cells[index].classList.contains(PLAYER_O)) {
+        if(cell[index].classList.contains(PLAYER_O)) {
             o++;
         }
 

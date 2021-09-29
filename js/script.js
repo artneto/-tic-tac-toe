@@ -91,7 +91,7 @@ function endGame(winner = null) {
 
 
     if (winner) {
-        h2.innerHTML =  `O player <span>${winner}</span> win `;
+        h2.innerHTML =  ` Player <span>${winner}</span> win `;
     }else {
         h2.innerHTML =  "Tie";
     }

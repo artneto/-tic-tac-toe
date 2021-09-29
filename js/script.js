@@ -77,6 +77,7 @@ function checkTie(){
 
   return x + o === 9 ? true : false;
 }
+
 function endGame(winner = null) {
     const popBox =document.getElementById("pop-box");
     const h2 = document.createElement("h2");
@@ -95,5 +96,16 @@ function endGame(winner = null) {
         h2.innerHTML =  "Tie";
     }
 
+    let countSeconds = 3;
+     setInterval(()=>{ 
+         h3.innerHTML = `Game will restart ${counterSeconds--}`;
+         if(contSeconds < 0){
+            location.reload();
+         
+         }
+         
+         },1000);
+         
+     setTimeout(() => location.reload(), 4000);
 
  }

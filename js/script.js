@@ -79,7 +79,7 @@ function checkTie(){
 }
 
 function endGame(winner = null) {
-    const popBox =document.getElementById("pop-box");
+    const popBox = document.getElementById("pop-box");
     const h2 = document.createElement("h2");
     const h3 = document.createElement("h3");
     let message= null;
@@ -89,23 +89,20 @@ function endGame(winner = null) {
     popBox.appendChild(h2);
     popBox.appendChild(h3);
 
-
     if (winner) {
-        h2.innerHTML =  ` Player <span>${winner}</span> win `;
+        h2.innerHTML =  ` The player <span>${winner}</span> won `;
     }else {
         h2.innerHTML =  "Tie";
     }
 
     let countSeconds = 3;
-     setInterval(()=>{ 
-         h3.innerHTML = `Game will restart ${counterSeconds--}`;
-         if(contSeconds < 0){
+    setInterval (()=>{
+        h3.innerHTML = ` Game will restart in ${countSeconds--}`;
+        if(countSeconds < 0){
             location.reload();
-         
-         }
-         
-         },1000);
-         
-     setTimeout(() => location.reload(), 4000);
+        }
+
+    }, 1000);
+     
 
  }

@@ -1,7 +1,7 @@
 //Define the players X and O.
 
 const cell = document.querySelectorAll(".cell");
-//let checkTurn=true;
+let endOfGame = false;
 const PLAYER_X="X";
 const PLAYER_O="O";
 
@@ -40,8 +40,9 @@ function bot() {
 const randomPosition = Math.floor(
     Math.random() * positionFree.length
     );
-
+    if(!endOfGame){
     play(positionFree[randomPosition],PLAYER_O);
+    }
 }
 //Function to check the turn from each player. Player X "true" is the first to play, Player O "false" is after Player X.
 function play (id, turn) {
@@ -91,6 +92,7 @@ function checkTie(){
 }
 
 function endGame(winner = null) {
+    endOfGame = true;
     const popBox = document.getElementById("pop-box");
     const h2 = document.createElement("h2");
     const h3 = document.createElement("h3");

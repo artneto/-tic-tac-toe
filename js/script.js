@@ -1,7 +1,7 @@
 //Define the players X and O.
 
 const cell = document.querySelectorAll(".cell");
-let checkTurn=true;
+//let checkTurn=true;
 const PLAYER_X="X";
 const PLAYER_O="O";
 
@@ -18,24 +18,38 @@ const COMBINATION =  [
 
 document.addEventListener("click", (event) =>{
     if(event.target.matches(".cell")){
-    play(event.target.id);
+    play(event.target.id, PLAYER_X);
+    setTimeout(() => bot(), 500);
     }
 
 });
+
+function bot() {
+    const positionFree = [];
+    for (index in cell) {
+        if(!isNaN(index)){
+            if(
+                !cell[index].classList.contains("X") &&
+                !cell[index].classList.contains("O")
+            ) {
+                positionFree.push(index);
+            }
+        }
+}
+
+const randomPosition = Math.floor(
+    Math.random() * positionFree.length
+    );
+
+    play(positionFree[randomPosition],PLAYER_O);
+}
 //Function to check the turn from each player. Player X "true" is the first to play, Player O "false" is after Player X.
-function play (id) {
+function play (id, turn) {
     const cell = document.getElementById(id);
-    turn = checkTurn? PLAYER_X : PLAYER_O;
-    if (!cell.isTaken) {
         cell.textContent = turn;
         cell.isTaken = true;
         cell.classList.add(turn);
         checkWinner(turn);
-        } else {
-            console.log("Already taken");
-        }
-  
- 
    }
 
 //Game rules: who is the winner? // if there was a tie//if there is another round.
@@ -53,9 +67,7 @@ if (winner){
     endGame(turn);
 }else if(checkTie()) {
     endGame();
-}else {
-     checkTurn = !checkTurn;
-    }
+}
 }
 
 function checkTie(){
@@ -103,6 +115,5 @@ function endGame(winner = null) {
         }
 
     }, 1000);
-     
 
  }

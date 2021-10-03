@@ -33,11 +33,14 @@ h2, h3 {
 }
 .container{
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
     max-width: 264px;
     background-color: #5F9EA0;
     border: 3px solid #3d7577;
 
+}
+span{
+    font-weight: 900;
 }
 
 .grid{

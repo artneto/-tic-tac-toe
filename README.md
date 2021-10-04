@@ -16,5 +16,14 @@ This site will be targeted at people of all ages with the intention of providing
 In order to be efficient, the header presents the game with 9 grids.
 Below we highlight the rules of the game, in a simple way to understand the rules.
 
-Once the game is complete, a black screen with a message informing the player who was the winner of the round.
-The game will restart for a new round.
+Once the game is complete, a black screen with a message informing the round winner and starting a new game after the countdown. 
+
+##### User Stories
+* I want a game that is clear on how to play.
+* I want be able to chose the grid.
+* I want to play against the computer. 
+* I want to know if I got the sequence right.
+* I want the game restart automatically without refreshing the page. 
+
+#### Strategy
+The objective of this project is to create interactivity and strategy between the user and the computer.

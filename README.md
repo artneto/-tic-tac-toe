@@ -6,4 +6,6 @@ The project is developed in HTML, CSS, and JavaScript.
 
 [**View Tic Tac Toe website here!**](https://artneto.github.io/-tic-tac-toe/)
 
-The users  for this game will be assigned as Player X and will play against the computer (Player O) Selecting the square you want to put your X into by clicking in the box. The first player to get three squares in a row wins.
+The users  for this game will be assigned as Player X and will play against the computer - Player O selecting the square you want to put your X into by clicking in the box. The first player to get three squares in a row wins.
+
+This site will be targeted at people of all ages with the intention of providing excellent practice in problem solving, analytical thinking, spatial reasoning, deduction, and strategy.

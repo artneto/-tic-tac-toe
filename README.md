@@ -65,3 +65,30 @@ The website is responsive, allowing people to interact with it on their mobile p
 * I've confirmed that the text are all readable and easy to understand. 
 * I've confirmed that game is playing in different medias: Smatphone, Tablet, Broswer. 
 * Ive confirmed that the bot is playing against player X is working properly. 
+
+## Technologies Used
+
+
+##### Languages Used
+
+* [HTML5](https://html.com/html5/)
+* [CSS3](https://css-tricks.com/)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+
+##### Programs used, Frameworks
+* [Balsamiq](https://balsamiq.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/)
+* [Coolors](https://coolors.co/ebf5df-bad4aa-d4d4aa-edb458-e8871e)
+* [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+* [GitHub](https://github.com/)
+
+##### Validation
+
+[W3C Markup Validator](https://validator.w3.org/)
+* Home Page
+
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+* CSS 
+

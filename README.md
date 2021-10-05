@@ -50,3 +50,9 @@ The website is responsive, allowing people to interact with it on their mobile p
     #### 5. Skeleton
 
 * Wireframe was created using [Balsamiq](https://balsamiq.com/)
+
+
+##### Home Page
+
+![](css/assets/images/game.png)
+

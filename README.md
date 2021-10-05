@@ -60,8 +60,8 @@ The website is responsive, allowing people to interact with it on their mobile p
 ##### Testing 
 
 
-*I've tested the game in different browsers: Chrome, Firefox, Safari. 
-*I've confirmed that the same results are always correct. 
-*I've confirmed that the text are all readable and easy to understand. 
-*I've confirmed that game is playing in different medias: Smatphone, Tablet, Broswer. 
-*Ive confirmed that the bot is playing against player X is working properly. 
+* I've tested the game in different browsers: Chrome, Firefox, Safari. 
+* I've confirmed that the same results are always correct. 
+* I've confirmed that the text are all readable and easy to understand. 
+* I've confirmed that game is playing in different medias: Smatphone, Tablet, Broswer. 
+* Ive confirmed that the bot is playing against player X is working properly. 

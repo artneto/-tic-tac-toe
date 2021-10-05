@@ -27,3 +27,26 @@ Once the game is complete, a black screen with a message informing the round win
 
 #### Strategy
 The objective of this project is to create interactivity and strategy between the user and the computer.
+
+#### 1. Strategy
+This project's objective is to allow users to interact with the game.
+
+#### 2. Goals
+The goal of this website is to provide a positive user experience while playing this interactive game.
+
+#### 3. Scope
+The website is responsive, allowing people to interact with it on their mobile platforms.
+
+
+#### 4. Features
+
+* Homepage
+    * On the homepage there will be displayed only the game and instructions.
+
+    * Result
+    * The result will be shown after the game is completed.
+
+
+    #### 5. Skeleton
+
+* Wireframe was created using [Balsamiq](https://balsamiq.com/)

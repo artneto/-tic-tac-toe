@@ -1,4 +1,4 @@
-# -tic-tac-toe
+# -tic-tac-toe Milestone
 
 Welcome to my second milestone project. I chose to make my own version of the Tic Tac Toe game for this project because I like challenge, consequently I believe this is the best choice for me.
 

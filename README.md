@@ -25,11 +25,8 @@ Once the game is complete, a black screen with a message informing the round win
 * I want to know if I got the sequence right.
 * I want the game restart automatically without refreshing the page. 
 
-#### Strategy
+#### 1.Strategy
 The objective of this project is to create interactivity and strategy between the user and the computer.
-
-#### 1. Strategy
-This project's objective is to allow users to interact with the game.
 
 #### 2. Goals
 The goal of this website is to provide a positive user experience while playing this interactive game.

@@ -39,8 +39,8 @@ The website is responsive, allowing people to interact with it on their mobile p
 
 * Homepage
     * On the homepage there will be displayed only the game and instructions.
-
-    * Result
+    
+* Result
     * The result will be shown after the game is completed.
 
 

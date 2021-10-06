@@ -1,4 +1,4 @@
-//Define the players X and O.
+//Define the players X and O.//
 
 const cell = document.querySelectorAll(".cell");
 let endOfGame = false;
@@ -44,7 +44,7 @@ const randomPosition = Math.floor(
     play(positionFree[randomPosition],PLAYER_O);
     }
 }
-//Function to check the turn from each player. Player X "true" is the first to play, Player O "false" is after Player X.
+//Function to check the turn from each player. Player X "true" is the first to play, Player O "false" is after Player X.//
 function play (id, turn) {
     const cell = document.getElementById(id);
         cell.textContent = turn;
@@ -53,7 +53,7 @@ function play (id, turn) {
         checkWinner(turn);
    }
 
-//Game rules: who is the winner? // if there was a tie//if there is another round.
+//Game rules: who is the winner? // if there was a tie//reset for another round//
 
 function checkWinner(turn){
     const winner = COMBINATION.some((comb) => {

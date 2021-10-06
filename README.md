@@ -79,7 +79,6 @@ The website is responsive, allowing people to interact with it on their mobile p
 ##### Programs used, Frameworks
 * [Balsamiq](https://balsamiq.com/)
 * [Google Fonts](https://fonts.google.com/)
-* [Font Awesome](https://fontawesome.com/)
 * [Coolors](https://coolors.co/ebf5df-bad4aa-d4d4aa-edb458-e8871e)
 * [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
 * [GitHub](https://github.com/)
@@ -91,4 +90,54 @@ The website is responsive, allowing people to interact with it on their mobile p
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * CSS 
+
+##### Testing
+
+Used the above validators to check the code but tested the following:
+1. Clicked in grid to confirm Im player X and bot is player O.
+2. Completed the game to make sure I was being challenged by the bot. 
+3. Checked on Devtools console tab if the game sequence and user sequence were being displayed correctly.
+4. Checked on Devtools console tab if correct IDs were being invocked.
+5. Played full game to ensure alert text box shows at the end of the game and result message shows.
+
+
+
+##### Bugs/errors
+1. I had to start over the javascript code multiple times due to errors on javascript code with player X and O not being identified. 
+2. I  had to checkTie function inside the for loop statement said for (index in cells) but it should be for(index in cell) and was causing trouble to the game.
+3. I removed the setTimeout because it with start after the setIntervel ends and will not work at the same time so after the three seconds end it will wait for another four seconds 
+then reload so I made an if condition inside the setInterval checks if the next countSecounds is smaller than 0 it will reload so the interval counts from 3 to 0 then reloads.
+
+
+## Deployment
+
+##### GitHub Pages
+
+1. A local project was created in GitHub with a new repository called 'Tic-Tac-Toe Milestone'
+2. The project had regular push and detailed commits which were pushed to the GitHub website before deployment
+3. The project was deployed by logging in to GitHub and locating the [GitHub Repository](https://artneto.github.io/-tic-tac-toe-Milestone/)
+4. At the top of the Repository (not top of page), locate the "Settings" Button on the menu and click
+5. Scroll down the Settings page until the "GitHub Pages" Section was found
+6. Under "Source", click the dropdown called "None" and select "Master Branch"
+7. The page will refresh and you will be brought back to the top of the settings page
+8. Scroll back down through the page to locate the now published site [link](https://artneto.github.io/-tic-tac-toe-Milestone/) in the "GitHub Pages" section
+9. The code can be run locally through clone or download, you can do this by opening the repository, clicking on the code button and then selecting either 'clone' or 'download'
+10. The Clone option provides a url, which you can use on your desktop IDE
+11. The Download option gives you a link so that you can download the zip file so that you can unzip it in your local machine
+---
+
+## Credits
+
+I used several code from other users:
+
+##### Code Snippets
+
+* [How to compare arrays](https://www.30secondsofcode.org/articles/s/javascript-array-comparison) 30 seconds of code
+* [Web Dev Simplified](https://www.youtube.com/watch?v=Y-GkMjUZsmM&t=69s) - Build Tic Tac Toe With JavaScript - Tutorial, I have used this video as example but my game is different from this one. 
+* [Florin Pop](https://www.youtube.com/watch?v=x7WJEmxNlEs) - Simple Countdown Timer with JavaScript - Day 21
+---
+
+## Acknowledgements
+I would like to thank my mentor, **Cans**, for his help on this project and for providing me some tools that made my project easier,
+**Slack Community** for their assistance with minor coding issues and **Beatriz Amorim** who tested my page and gave me excellent feedback based on his milestone submission.
 

@@ -71,6 +71,8 @@ if (winner){
 }
 }
 
+
+
 function checkTie(){
     let x = 0;
     let o = 0;

@@ -4,7 +4,7 @@ Welcome to my second milestone project. I chose to make my own version of the Ti
 
 The project is developed in HTML, CSS, and JavaScript.
 
-![game](/assets/images/game01.png)
+![game01](/assets/images/game01.png)
 
 [**View Tic Tac Toe website here!**](https://artneto.github.io/-tic-tac-toe/)
 
